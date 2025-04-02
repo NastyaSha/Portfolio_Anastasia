@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  .fon{
+
+  }
+
+  .flexmenu{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+
+  .conteiner{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1366px){
+
+  }
+
+  @media (min-width: 1920px){
+  }

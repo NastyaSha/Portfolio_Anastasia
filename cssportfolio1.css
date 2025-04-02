@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #424040;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  p{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  h1{
+    font-size: 136px;
+  }
+
+  h2{
+    font-size: 64px;
+  }
+
+  header{
+    background: linear-gradient(#FFBCD3, #FFFFFF 40%);
+    position: relative;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+  .conteiner{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .flexmenu{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+
+  .conteiner{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .menunav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    justify-items: end;
+  }
+
+  .menutext{
+    font-size: 20px;
+    color: #424040;
+    transition: color 0.5s ease
+  }
+
+  .menutext:hover{
+    color: #fff;
+  }
+
+/* -- Баннер --*/
+
+.maimtext{
+    font-family: "Roboto", sans-serif;
+    color: #F3A0BC;
+}
+
+.subtitle{
+    font-weight: 600;
+    width: 348px;
+    text-align: left;
+}
+
+.main{
+    position: relative;
+    display: grid;
+    grid-template-rows: 130px 52px;
+    row-gap: 10px;
+    justify-items: end;
+}
+
+.main1{
+    position: relative;
+    display: grid;
+    grid-template-rows: 24px 130px;
+    row-gap: 10px;
+    justify-items: start;
+    padding-top: 40px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.maimtext1{
+      font-family: "Tiny5", sans-serif;
+    color: #94CC23;
+    display: flex;
+    align-items: flex-end;
+}
+
+.subtitle1{
+    font-weight: 600;
+    width: 348px;
+    text-align: right;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Поднимается вверх */
+    }
+    100% {
+        transform: translateY(0); /* Возвращается в исходное положение */
+    }
+}
+
+.moving {
+    animation: float 2s ease-in-out infinite;
+}
+
+.star1{
+    position: absolute;
+        top: -110px;
+        left: 40px;
+}
+
+.computer{
+    position: absolute;
+    bottom: -150px;
+    right: -50px;
+    background-image: url(https://www.youtube.com/watch?v=J---aiyznGQ);
+}
+
+.star2{
+    position: absolute;
+    top: -120px;
+    right: -0px;
+}
+ /* -- Лента --*/
+
+ .linia{
+    font-family: "Tiny5", sans-serif;
+    font-size: 30px;
+    color: #fff;
+
+ }
+
+ section {
+    overflow: hidden;
+    background-color: #94CC23;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee__content {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.star {
+    height: 30px;
+    width: 30px;
+}
+
+/* ОБО МНЕ */
+
+strong{
+    color: #94CC23;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+.id-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 40px;
+    width: 700px;
+    padding: 29px 70px;
+    border: 6px solid #94CC23; /* Зелёная рамка */
+    border-radius: 15px; /* Скругление углов */
+    position: relative;
+    text-align: left;
+}
+
+
+
+/* Стиль для заголовка с клубничками */
+.id-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #94CC23;
+}
+
+/* Клубнички */
+.id-title img {
+    height: 50px;
+    margin-left: 5px;
+}
+
+/* Декоративная звезда в углу */
+.id-card::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 80px;
+    height: 80px;
+    background: url('img/star-green.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.5;
+}
+
+.abotme1{
+    position: absolute;
+    bottom: -30px;
+    right: -22px;
+    z-index:-1;
+}
+
+/* Скилл */
+
+.skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding-top: 124px;
+}
+
+.oh{
+    display: flex;
+    gap: 20px;
+}
+
+.skillgrid{
+    display: grid;
+    row-gap: 16px;
+}
+
+h4{
+    font-size: 40px;
+}
+
+.cry{
+    font-size: 40px;
+    font-weight: 600;
+    padding-right: 16px;
+}
+
+/* Проекты */
+.mey{
+    position: relative;
+    display: grid;
+    row-gap: 16px;
+    justify-items: center;
+}
+
+.mey1{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.mey2{
+    position: relative;
+    display: grid;
+    grid-template-columns: 310px 310px 310px  ;
+    column-gap: 60px;
+    justify-self: end;
+}
+
+.proect{
+    display: grid;
+    row-gap: 75px;
+}
+
+.project-item {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px; /* Добавляем пространство, чтобы курсор не "срывался" */
+}
+
+.pp {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 70%;
+    height: 160px;
+    transform: translate(-50%, 10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* Запрещаем кликать и наводить на .pp */
+    box-shadow: 2px 5px 9px rgba(66, 64, 64, 0.7);
+}
+
+.project-item:hover .pp {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    pointer-events: auto; /* Включаем взаимодействие только при наведении */
+}
+
+
+.project-item1 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px; /* Добавляем пространство, чтобы курсор не "срывался" */
+}
+
+.pp1 {
+    opacity: 0;
+    position: absolute;
+    left: 70%;
+    bottom: 40%;
+    height: 100%;
+    transform: translate(-50%, 10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* Запрещаем кликать и наводить на .pp */
+    box-shadow: 2px 2px 4px rgba(61, 105, 16, 0.5);
+}
+
+.project-item1:hover .pp1 {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    pointer-events: auto; /* Включаем взаимодействие только при наведении */
+}
+
+
+
+
+/* -- Фоотер --*/
+.fon1{
+    background: linear-gradient(#FFFFFF,#FFABC7);
+    height:708px;
+    display: grid;
+    align-items: end;
+}
+
+.contact{
+    display: grid;
+    row-gap: 8px;
+   justify-items: center;
+   cursor: pointer 
+}
+
+.contact1{
+    display: grid;
+    grid-template-columns: 90px  90px  90px;
+    column-gap: 20px;
+    justify-items: start;
+}
+
+.font1{
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+}
+
+.bottom{
+    display: grid;
+    align-items: end;
+}
+
+/* ПЕРВЫЙ ПРОЕКТ */
+
+.okwy{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 130px;
+}
+
+.proectpp{
+    display: flex;
+    justify-self: center;
+    border-radius: 16px;
+}
+
+.back {
+    background: url('img/Back.svg') no-repeat left 10px center, #fff;
+    cursor: pointer;
+    width: 460px;
+    height: 87px;
+    border: none;
+    transition: background-image 0.5s ease; /* Плавный переход для background-image */
+}
+
+.back:hover {
+    background-image: url('img/Back1.svg');
+}
+
+.next {
+    background: url('img/next.svg') no-repeat left 10px center, #fff;
+    cursor: pointer;
+    width: 428px;
+    height: 87px;
+    border: none;
+    padding-right: 6px;
+    transition: background-image 0.5s ease; /* Плавный переход для background-image */
+}
+
+.next:hover {
+    background-image: url('img/next1.svg');
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+
+
+/* -- Адаптивка --*/
+}
+  @media (min-width: 1250px){
+    .conteiner{
+        max-width: 1175px;
+      }
+
+
+
+  }
+
+  @media (min-width: 1920px){
+    .conteiner{
+        max-width: 1300px;
+      }
+
+  
+  }
